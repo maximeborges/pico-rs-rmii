@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "preLaunchTask": "${defaultBuildTask}",
+            "type": "probe-rs-debug",
+            "request": "launch",
+            "name": "probe_rs Executable Test",
+            "runtimeExecutable": "/home/mborges/.cargo/bin/probe-rs-debugger",
+            "programBinary": "${workspaceFolder}/target/thumbv6m-none-eabi/debug/pico-rs-rmii-ethernet",
+            "chip": "RP2040",
+            "rttEnabled": true
+        }
+    ]
+}
